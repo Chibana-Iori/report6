@@ -1,3 +1,4 @@
+import java.util.Scanner;
 class Rate {
     int Rate = (int)(Math.random()*40)+60;
     public void setUp(){
@@ -30,6 +31,11 @@ class Weight extends Rate{
 }
 public class Player{
     public static void main(String[] args){
+        String input;//読み込んだユーザ入力を格納するStringオブジェクトを用意。
+        Scanner in = new Scanner(System.in);// 標準入力から読み込むスキャナを用意
+        System.out.println("選手名を入力してください");
+        input = in.nextLine();// inputにユーザ入力を保存する。
+        System.out.println(input);
         Rate[] rates = new Rate[4];
         rates[0] = new Rate();
         rates[1] = new Age();
