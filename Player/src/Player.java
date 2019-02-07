@@ -1,13 +1,13 @@
 import java.util.Scanner;
 class Rate {
-    int Rate = (int)(Math.random()*40)+60;
+    int Rate = (int)(Math.random()*40)+60;//50~100まで
     public void setUp(){
         System.out.printf("総合値　%d\n",Rate);
     }
 }
 
 class Age extends Rate{
-    int Age = (int)(Math.random()*35)+15;
+    int Age = (int)(Math.random()*35)+15;//15~50まで
     @Override
     public void setUp(){
         System.out.printf("年齢 %d\n",Age);
@@ -15,7 +15,7 @@ class Age extends Rate{
 }
 
 class Height extends Rate {
-    int Height = (int)(Math.random()*50)+160;
+    int Height = (int)(Math.random()*50)+160;//160~210まで
     @Override
     public void setUp(){
         System.out.printf("身長　%d\n",Height);
@@ -23,7 +23,7 @@ class Height extends Rate {
 }
 
 class Weight extends Rate{
-    int Weight =(int)(Math.random()*40)+60;
+    int Weight =(int)(Math.random()*40)+60;//60~100まで
     @Override
     public void setUp(){
         System.out.printf("体重　%d\n",Weight);
