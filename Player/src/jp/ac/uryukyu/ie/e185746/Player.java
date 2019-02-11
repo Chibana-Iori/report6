@@ -1,3 +1,5 @@
+package jp.ac.uryukyu.ie.e185746;
+
 import java.util.Scanner;
 class Rate {
     int Rate = (int)(Math.random()*40)+60;//50~100まで
